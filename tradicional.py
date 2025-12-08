@@ -28,7 +28,6 @@ def obtener_temperaturas():
     
     return temperaturas
 
-
 def calcular_promedio(temperaturas):
     """
     Calcula el promedio de las temperaturas.
@@ -43,7 +42,6 @@ def calcular_promedio(temperaturas):
         return 0
     return sum(temperaturas) / len(temperaturas)
 
-
 def encontrar_temperatura_maxima(temperaturas):
     """
     Encuentra la temperatura máxima de la semana.
@@ -56,7 +54,6 @@ def encontrar_temperatura_maxima(temperaturas):
     """
     return max(temperaturas) if temperaturas else 0
 
-
 def encontrar_temperatura_minima(temperaturas):
     """
     Encuentra la temperatura mínima de la semana.
@@ -68,7 +65,6 @@ def encontrar_temperatura_minima(temperaturas):
         float: Temperatura mínima
     """
     return min(temperaturas) if temperaturas else 0
-
 
 def mostrar_resultados(temperaturas):
     """
@@ -97,12 +93,10 @@ def mostrar_resultados(temperaturas):
     print(f"Rango de temperaturas: {maxima - minima}°C")
     print("=" * 50)
 
-
 def main():
     """Función principal que coordina el programa."""
     temperaturas = obtener_temperaturas()
     mostrar_resultados(temperaturas)
-
 
 if __name__ == "__main__":
     main()
